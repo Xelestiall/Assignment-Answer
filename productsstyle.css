@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media screen{
+    
+}
+/*Section Header*/
+.nav-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100vw;
+    box-shadow:  0 0 16px silver;
+}
+.logo{
+    padding-left: 24px;
+    margin: 18px 0px;
+}
+.right-button{
+    padding-right: 24px;
+    align-items: center;
+    display: flex;
+}
+.right-button li{
+    list-style-type: none;
+    padding: 18px 36px;
+}
+.right-button li a{
+    text-decoration: none;
+    color: black;
+}
+.right-button li a:hover{
+    text-decoration: underline;
+    text-decoration-color: teal;
+    text-decoration-thickness: 2px;
+}
+.sub-right{
+    display: none;
+}
+.sub-right li{
+    padding: 0px 10px;
+    margin: 0;
+}
+.right-button li:hover .sub-right{
+    display: block;
+    position: absolute;
+    border: 1px solid silver;
+    background-color: white;
+    border-radius: 4px;
+    justify-content: center;
+}
+.right-button li:hover .sub-right li a{
+    display: block;
+}
+.right-button li:hover .sub-right li a{
+    margin: 10px 0px;
+    padding: 0;
+    text-align: left;
+}
+.sub-right li a:hover{
+    color: lightseagreen;
+    text-decoration: none;
+}
+.login{
+    color: white;
+    background-color: lightseagreen;
+    border-radius: 18px;
+    padding: 10px 28px;
+}
+/*Section Healthcare*/
+.healthcare{
+    justify-content: center;
+    width: 100vw;
+}
+.healthcare h1{
+    text-align: center;
+    font-size: 48px;
+    font-family: Calibry (Body);
+    font-weight: normal;
+}
+.best-sell{
+    position: absolute;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: yellow;
+    width: 110px;
+}
+.healthcare p{
+    text-align: center;
+    padding-bottom: 5vh;
+}
+.img-container{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.healthcare1, .healthcare2, .healthcare3{
+    align-items: center;
+    height: 57vh;
+    width: 23vw;
+    margin: 1vh 1vw;
+    box-shadow: 0 0 16px silver;
+}
+.healthcare1 h4{
+    display: flex;
+    font-family: Calibry (Body);
+    padding: 0px 20px;
+}
+.healthcare1 p{
+    display: flex;
+    padding: 0px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+.healthcare2 h4{
+    display: flex;
+    font-family: Calibry (Body);
+    padding: 0px 20px;
+}
+.healthcare2 p{
+    display: flex;
+    padding: 0px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.healthcare3 h4{
+    display: flex;
+    font-family: Calibry (Body);
+    padding: 0px 20px;
+}
+.healthcare3 p{
+    display: flex;
+    padding: 0px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+.img-container img{
+    display: flex;
+    margin: 0vh 1vw 1vh 1vw;
+}
+
+/*Section Footer*/
+.footer-container{
+    position: absolute;
+    width: 100vw;
+    height: 90px;
+    box-shadow: 0 0 16px silver;
+}
+.wrapper, .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper i{
+    display: flex;
+    justify-content: center;
+    margin: 24px 12px 12px 12px;
+}
+.wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.wrapper a i:hover{
+    font-size: 24px;
+}
+.copyright{
+    margin-bottom: 12px;
+}

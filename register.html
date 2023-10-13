@@ -1,0 +1,102 @@
+<!--Register Page-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="registerstyle.css">
+        <script src="https://kit.fontawesome.com/ca8cef09e9.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image" href="assets/icon.png"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="register, new member">
+        <meta author="Axel Christopher" content="copyright reserved">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Page</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav class="nav-container">
+                <div class="logo">
+                <img src="assets/icon.png" alt="Medicare franchise icon">
+                </div>
+                <ul class="right-button">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a>
+                        <ul class="sub-right">
+                            <li><a href="products.html#kesehatan">Healthcare</a></li>
+                            <li><a href="products.html#kosmetik">Cosmetic</a></li>
+                            <li><a href="products.html#danlain">Misc.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </nav>        
+        </section>
+        <section class="regis-page">
+            <form id="form" action="home.html" method="post" autocomplete="off">
+                <div class="judul">
+                    <h1>Register</h1>
+                </div>
+                <div class="input-Text">
+                    <input type="text" placeholder="Full Name" name="namalengkap" id="namalengkap">
+                </div>
+                <div class="input-Text">
+                    <input type="text" placeholder="Email" name="email" id="email">
+                </div>
+                <div class="genderr">
+                    <label for="gender">Gender</label>
+                    <input  type="radio" name="jenis" value="male" id="jenis" required> <p>Male</p>
+                    <input type="radio" name="jenis" value="female" id="jenis" required> <p>Female</p>
+                </div>
+                <div class="city">
+                    City <br> <br>
+                    <select name="kota" id="kota">
+                        <option value="" selected="selected" >Please Select Your City</option>
+                            <optgroup label="Domisili">
+                                <option value="Banten">Banten</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Semarang">Semarang</option>
+                                <option value="Yogyakarta">Yogyakarta</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Malang">Malang</option>
+                                <option value="Bali">Bali</option>
+                                <option value="Nusa Tenggara">Nusa Tenggara</option>
+                                <option value="Pontianak">Pontianak</option>
+                                <option value="Samarinda">Samarinda</option>
+                                <option value="Jakarta">Banjarmasin</option>
+                                <option value="Palangkaraya">Palangkaraya</option>
+                                <option value="Others">Lainnya</option>
+                            </optgroup>
+                    </select>
+                </div>
+                <div class="input-Text">
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Password" name="psw" id="password">
+                </div>
+                <div class="input-Text">
+                    <label for="psw-repeat">Repeat Password</label>
+                    <input type="password" placeholder="Repeat Password" name="repeat-password" id="repeat-password">
+                </div>
+                <div class="errormsg" id="error"></div>
+                <div class="registerr">
+                    <button type="submit" class="regisbtn">Register</button>
+                </div>
+            </form>
+        </section>   
+        <script src="register.js"></script>
+    </body>
+    <footer>
+        <nav class="footer-container">
+            <div class="wrapper">
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+            <p>Copyright © 2022 Axel Christopher. All Right Reserved.</p>
+            </div>
+        </nav>
+    </footer>
+</html>

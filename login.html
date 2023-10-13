@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="loginstyle.css">
+        <script src="https://kit.fontawesome.com/ca8cef09e9.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image" href="assets/icon.png"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta author="Axel Christopher" content="copyrihgt reserved">
+        <meta name="description" content="log-in, login to account, google, gmail, medicare">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Medicare</title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav class="nav-container">
+                <div class="logo">
+                <img src="assets/icon.png" alt="Medicare franchise icon">
+                </div>
+                <ul class="right-button">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a>
+                        <ul class="sub-right">
+                            <li><a href="products.html#kesehatan">Healthcare</a></li>
+                            <li><a href="products.html#kosmetik">Cosmetic</a></li>
+                            <li><a href="products.html#danlain">Misc.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html" class="login">Login</a></li>
+                </ul>
+            </nav>        
+        </section>
+        <section class="login-page">
+            <form id="form" action="home.html" method="post" autocomplete="off">
+                <div class="judul">
+                    <h1>Login</h1>
+                </div>
+                <div class="inputText">
+                    <input type="text" placeholder="Email" name="email" id="email">
+                </div>
+                <div class="inputText">
+                    <input type="password" placeholder="Password" name="password" id="password">
+                </div>
+                <div class="log-in">
+                    <button type="submit" class="loginbtn">Login</button>
+                </div>
+                <div class="errormsg" id="error"></div>
+                <div class="newacc">
+                    Don't have an account yet? <a href="register.html" target="_blank">Register</a> now !
+                </div>
+            </form>
+        </section>
+        <script src="login.js"></script>        
+    </body>
+    <footer>
+        <nav class="footer-container">
+            <div class="wrapper">
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+            <p>Copyright ©2022 Axel Christopher. All Right Reserved.</p>
+            </div>
+        </nav>
+    </footer>
+</html>
